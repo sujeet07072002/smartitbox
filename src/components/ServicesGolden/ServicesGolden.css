@@ -1,0 +1,183 @@
+.golden {
+  background: linear-gradient(180deg, #d89e3d, #c8842c);
+  padding: 80px 8%;
+  color: white;
+}
+
+/* ================= STATS ================= */
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: white;
+  color: #1e293b;
+  padding: 25px 35px;
+  border-radius: 12px;
+  text-align: center;
+  min-width: 160px;
+}
+
+.stat-box h3 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.stat-box p {
+  font-size: 13px;
+}
+
+/* ================= TAG BAR ================= */
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  margin-bottom: 60px;
+  opacity: 0.9;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.golden-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+}
+
+.mini-tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.left h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.service-list {
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.service-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  cursor: pointer;
+}
+
+.service-item h4 {
+  font-size: 15px;
+}
+
+.service-item p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.service-item.active {
+  background: rgba(255,255,255,0.15);
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.arrow {
+  background: white;
+  color: #c8842c;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  position: relative;
+  text-align: center;
+}
+
+.view-circle {
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 25px;
+  font-size: 12px;
+}
+
+.image-card {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+.image-card img {
+  width: 150px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+  .golden-content {
+    flex-direction: column;
+  }
+
+  .left h2 {
+    font-size: 26px;
+  }
+
+  .view-circle {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .golden {
+    padding: 60px 6%;
+  }
+
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .stat-box {
+    width: 100%;
+  }
+
+  .service-item h4 {
+    font-size: 14px;
+  }
+
+  .service-item p {
+    font-size: 12px;
+  }
+}

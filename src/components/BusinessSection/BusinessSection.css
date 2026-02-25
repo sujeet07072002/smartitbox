@@ -1,0 +1,147 @@
+.business {
+  padding: 100px 8%;
+  background: #f8fafc;
+}
+
+/* ================= HEADING ================= */
+
+.business-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.business-heading h2 {
+  font-size: 34px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.business-heading h3 {
+  font-size: 24px;
+  color: #fbbf24;
+  margin-bottom: 10px;
+}
+
+.business-heading p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* ================= MAIN CONTAINER ================= */
+
+.business-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* ================= LEFT ================= */
+
+.business-left {
+  flex: 1;
+  position: relative;
+}
+
+.business-left img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= RIGHT ================= */
+
+.business-right {
+  flex: 1;
+}
+
+.offer-block {
+  margin-bottom: 35px;
+}
+
+.offer-block h4 {
+  font-size: 18px;
+  color: #1e293b;
+  margin-bottom: 12px;
+}
+
+.offer-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-block li {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  position: relative;
+}
+
+.offer-block li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #fb8500;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+
+  .business-container {
+    flex-direction: column;
+  }
+
+  .business-heading h2 {
+    font-size: 28px;
+  }
+
+  .business-heading h3 {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  .business {
+    padding: 60px 6%;
+  }
+
+  .business-heading h2 {
+    font-size: 22px;
+  }
+
+  .business-heading h3 {
+    font-size: 18px;
+  }
+
+  .offer-block h4 {
+    font-size: 16px;
+  }
+
+  .offer-block li {
+    font-size: 13px;
+  }
+
+  .contact-btn {
+    width: 100%;
+  }
+}
