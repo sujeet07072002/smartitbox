@@ -7,6 +7,11 @@ import WorkingProcess from "../components/WorkingProcess/WorkingProcess";
 import TestimonialsSection from "../components/TestimonialsSection/TestimonialsSection";
 import CaseStudies from "../components/CaseStudies/CaseStudies";
 import BlogSection from "../components/BlogSection/BlogSection";
+import AboutPage from "./companyPages/About";
+import OurTeamHero from "./companyPages/OurTeamHero";
+import CareersHero from "./companyPages/CareersHero";
+import ContactHero from "./companyPages/ContactHero";
+import PrivacyHero from "./companyPages/PrivacyHero";
 
 const Home = () => {
   return (
@@ -19,6 +24,12 @@ const Home = () => {
       <TestimonialsSection />
       <CaseStudies />
       <BlogSection />
+      <AboutPage/>
+      <OurTeamHero/>
+      <CaseStudies/>
+      <CareersHero/>
+      <ContactHero/>
+      <PrivacyHero/>
     </>
   );
 };
